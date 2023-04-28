@@ -63,9 +63,14 @@ if(length(which(genetab$fatality_rate==0))>0){
   genetab=genetab[-which(genetab$fatality_rate==0),]
 }
 
-# Filter out signature Alpha mutations
+# Filter out signature Alpha and Beta mutations
+print("Alpha removed:")
 print(length(which(genetab$descriptor%in%B117$descriptor)))
 genetab=genetab[-which(genetab$descriptor%in%B117$descriptor),]
+
+print("Beta removed:")
+print(length(which(genetab$descriptor%in%B1351$descriptor)))
+genetab=genetab[-which(genetab$descriptor%in%B1351$descriptor),]
 
 
 
