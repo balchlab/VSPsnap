@@ -49,7 +49,7 @@ dt<-strsplit(inFiles[i],"[.]")[[1]][1]
   print(dt)
 
 
-genetab_all<-read.csv(paste0("../VSPsnap/data/cumulative_daily_AF_v4_lag_5_31/",inFiles[i]))
+genetab_all<-read.csv(paste0("../VSPsnap_old/data/cumulative_daily_AF_v4_lag_5_31/",inFiles[i]))
 genetab_all$AF<-genetab_all$counts/sum(genetab_all$counts)
 
 # filter < 3 counts
