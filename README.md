@@ -1,4 +1,4 @@
-# VSPsnap
+# VSPsnap  [![DOI](https://zenodo.org/badge/472567724.svg)](https://zenodo.org/badge/latestdoi/472567724)
 VSPsnap is a collection of R and Python code for Gaussian Process regression in a kriging-like setting (i.e. two features (X,Y) and a target (Z)). Includes functions for:
 - GP hyperparameter search and tuning;
 - Optimization;
